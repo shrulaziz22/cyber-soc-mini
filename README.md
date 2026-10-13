@@ -22,6 +22,10 @@ scripts/soc_triage.py — phishing + malware triage
 scripts/threat_hunt.py — jam aneh + CreateUser + YARA-mini
 scripts/dfir_timeline.py — timeline + hash bukti
 scripts/laporan_otomatis.py — gabung semua jadi LAPORAN_FINAL.md
+scripts/detection_engineering.py — Sigma SOC-001 -> KQL/SPL + tune TP/FP
+scripts/detection_best.py — Sigma SOC-002 T1136 jam aneh
+rules/brute_force.yml — SOC-001 T1110 >=5/5m
+rules/persistence_createuser.yml — SOC-002 T1136 jam 00-05
 web-lab/app.py — server aman sendiri (escape + CSP)
 logs/* — SEMUA SAMPEL, bukan data asli
 ```
@@ -45,4 +49,4 @@ python3 scripts/laporan_otomatis.py
 ## Etika
 Hanya lab milik sendiri + situs latihan legal (TryHackMe, HackTheBox, PortSwigger Academy). Tidak menyerang sistem orang lain.
 
-— Dibuat 63 hari, 10 script, 400+ baris, full di Android.
+— Dibuat 63 hari, 12 script, 500+ baris, 2 Sigma rule TP 2 FP 0, full di Android.
