@@ -1,0 +1,10 @@
+HARI 34 SPL + D3FEND (HP BISA)
+Buka: Splunk Search Tutorial gratis di browser (tanpa install).
+Latih 2 SPL dari aturan kamu:
+index=lab "Failed password" | stats count by src_ip | where count>=5
+index=lab Event=CreateUser date_hour<=5 NOT src_ip=203.0.113.10
+D3FEND pasangan MITRE:
+T1110 -> Credential Hardening + MFA
+T1136 -> Account Audit + hapus akun liar sendiri
+T1071 -> Network Isolation + blokir DNS sendiri
+Tugas: tulis 3 baris beda KQL vs SPL di notes. Semua demo resmi dan lab sendiri.
