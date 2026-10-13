@@ -1,0 +1,7 @@
+VERSI 1.1 - 5 ATURAN RAPI (Hari 14-30)
+SOC-001 T1110 brute SSH >=5/5m, allowlist 203.0.113.10, TP 1 FP 1
+SOC-002 T1136 CreateUser jam 00-05, TP 1 FP 0
+SOC-003 T1110 web 401/404 >=3/5m, naik ke >=5 kalau berisik
+SOC-004 T1548 sudo shadow/user liar >=1, butuh tiket
+SOC-005 T1071 DNS >40 char, allowlist google.com
+Uji: tiap Senin jalankan tier2_tuning.py + tier2_hari1.py, catat TP FP di tuning.json, commit tiap ubah.

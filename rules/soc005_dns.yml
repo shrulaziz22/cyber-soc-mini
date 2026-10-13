@@ -1,0 +1,12 @@
+title: DNS Panjang Lab Sendiri
+id: SOC-005
+level: medium
+detection:
+  selection:
+    Event: dns query panjang >40 char atau >20 query/menit ke IP mentah
+  condition: count >= 1
+mitre: T1071
+false_positive: CDN panjang sesekali
+action: blokir domain di DNS sendiri + cek proses asal
+versi: 1.1
+tuning: allowlist google.com, threshold 40 char, review mingguan
