@@ -1,0 +1,22 @@
+title: Web Brute Force Lab Sendiri
+id: SOC-003
+level: high
+detection:
+  selection:
+    Event: 401/404 web
+  timeframe: 5m
+  condition: count(src_ip) >= 3
+mitre: T1110
+false_positive: scanner sendiri
+action: blokir sementara di WAF sendiri + cek allowlist
+---
+title: Sudo Abuse Lab Sendiri
+id: SOC-004
+level: critical
+detection:
+  selection:
+    Event: sudo ke /etc/shadow atau user tak terdaftar
+  condition: count >= 1
+mitre: T1078/T1548
+false_positive: admin sah dengan tiket
+action: cabut sesi + audit sudoers sendiri
