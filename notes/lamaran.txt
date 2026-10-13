@@ -1,0 +1,6 @@
+LAMARAN TIER-2 (isi tiap lamar)
+1. Tanggal | Perusahaan | Posisi | Link | Status
+2. Contoh: 14 Okt | PT Aman | Magang SOC | link | Terkirim
+Target: 10 lamaran hari 81-90. Tempel link repo cyber-soc-mini di tiap lamaran.
+Sertifikat: tulis target dan tanggal ujian di bawah ini.
+Target: Google Cybersecurity, ujian: ____
