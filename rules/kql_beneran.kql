@@ -1,0 +1,20 @@
+// KQL BENERAN - 5 ATURAN LAB SENDIRI (uji di Sentinel demo gratis)
+// SOC-001 T1110 SSH brute
+AuthLog
+| where Event contains "Failed password"
+| summarize gagal=count() by SrcIp, bin(TimeGenerated, 5m)
+| where gagal >= 5
+// SOC-002 T1136 CreateUser aneh
+CloudLog
+| where Event == "CreateUser" and hourofday(TimeGenerated) in (0,1,2,3,4,5) and SrcIp != "203.0.113.10"
+// SOC-003 T1110 web brute
+WebLog
+| where Status in (401, 404)
+| summarize gagal=count() by SrcIp, bin(TimeGenerated, 5m)
+| where gagal >= 3
+// SOC-004 T1548 sudo
+SudoLog
+| where Command contains "shadow" or User !in ("uya")
+// SOC-005 T1071 DNS panjang
+DnsLog
+| where strlen(Query) > 40
