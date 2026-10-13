@@ -1,4 +1,4 @@
-# Home SOC Mini (Termux / Android) — Siap Magang SOC Tier-1
+# Home SOC Mini (Termux / Android) — SOC Tier-1 Menuju Tier-2
 
 Belajar 63 hari dari HP: monitoring, triage, hunting, DFIR, semua di lab sendiri dengan data sampel.
 
