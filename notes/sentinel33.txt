@@ -1,0 +1,7 @@
+HARI 33 SENTINEL GRATIS (HP BISA)
+Buka di Chrome: learn.microsoft.com > Sentinel KQL demo gratis, tanpa kartu.
+Latih 3 query dari aturan kamu:
+1. Brute: AuthLog | summarize gagal=count() by SrcIp, bin(TimeGenerated,5m) | where gagal>=5
+2. CreateUser aneh: CloudLog | where Hour in (0,1,2,3,4,5) and SrcIp != "203.0.113.10"
+3. DNS panjang: DnsLog | where strlen(Query)>40
+Tugas: screenshot hasil demo + tulis 1 paragraf beda KQL vs SPL. Semua di lab dan demo resmi, jangan sentuh data orang.
