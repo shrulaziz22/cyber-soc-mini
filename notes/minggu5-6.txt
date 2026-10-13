@@ -1,0 +1,16 @@
+MINGGU 5-6 LANJUTAN (setelah 30 hari)
+=====================================
+Minggu 5: Threat Hunting + Cloud defensif
+- Jalankan: python3 ~/cyber-lab/scripts/threat_hunt.py
+- Konsep: hipotesis (ex: "ada login jam 2 pagi?") -> cek log sendiri -> putuskan.
+- Cloud: prinsip least-privilege, MFA, CloudTrail. Jangan utak-atik akun orang.
+- YARA/Sigma: pakai aturan publik untuk DETEKSI di file sendiri, bukan buat malware.
+
+Minggu 6: Karir + Bug Bounty legal
+- Syarat bounty: HANYA program resmi (HackerOne, Bugcrowd, scope jelas). Dilarang tes di luar scope.
+- Fokus bounty pemula defensif: laporkan missing header, Clickjacking, info-leak di lab scope.
+- Portfolio: rapikan ~/cyber-lab -> GitHub (hapus log asli, pakai sampel), tambah README + LAPORAN_INSIDEN.md.
+- Sertifikat urutan hemat: Google Cybersecurity -> Security+ -> Blue Team L1.
+- CTF rutin: picoCTF, TryHackMe streak mingguan.
+
+Target akhir Minggu 6: 1 repo GitHub live + 1 sertifikat dasar + bisa jelaskan MITRE 5 teknik tanpa contekan.

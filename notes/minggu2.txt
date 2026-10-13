@@ -1,0 +1,33 @@
+LAB MINGGU 2 - WEB SECURITY DEFENSIF (HP)
+==========================================
+Tujuan: paham OWASP Top 10 dari sisi bertahan, bukan menyerang.
+Aturan: hanya lab sendiri + PortSwigger Academy di browser HP.
+
+Hari 8: SQL Injection (konsep bertahan)
+- Apa: query digabung string -> bocor.
+- Bertahan: parameterized query / ORM, least-privilege DB, WAF + log.
+- Jangan coba ke situs orang. Latihan legal: PortSwigger > SQLi > baca mitigasi.
+
+Hari 9: XSS (Cross-Site Scripting)
+- Apa: input ditampilkan tanpa encode -> script jalan di browser korban.
+- Bertahan: output encoding, Content-Security-Policy, HttpOnly cookie.
+- Cek: lihat script web_check.py Header CSP.
+
+Hari 10: IDOR / Broken Access Control
+- Apa: ganti id=123 jadi id=124 bisa lihat data orang.
+- Bertahan: cek otorisasi di server tiap request, jangan percaya ID dari client.
+- Latihan: di web-lab sendiri, pastikan user A tidak bisa baca file user B.
+
+Hari 11: SSRF
+- Apa: server disuruh fetch URL internal.
+- Bertahan: allowlist URL, blok 169.254.169.254 & 127.0.0.1, timeout.
+- Jangan scan internal orang lain.
+
+Hari 12: PortSwigger Academy (gratis, di Chrome HP)
+- Kerjakan: SQLi, XSS, Access Control - baca bagian MITIGATION tiap lab.
+- Catat 1 paragraf per topik di notes/.
+
+Hari 13-14: Praktik bertahan di HP (tanpa DVWA/PHP yang rusak)
+- Jalankan: python3 ~/cyber-lab/web-lab/app.py (server aman milik sendiri)
+- Jalankan: python3 ~/cyber-lab/scripts/web_check.py (cek header)
+- Tugas: tambahkan CSP + X-Frame-Options + validasi input, lihat skor naik.

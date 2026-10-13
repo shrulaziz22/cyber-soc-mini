@@ -1,0 +1,14 @@
+MINGGU 7-8 CAPSTONE
+==================
+Minggu 7: DFIR mini
+- Jalankan: python3 ~/cyber-lab/scripts/dfir_timeline.py
+- Hafal: urutan IR = Persiapan > Deteksi > Analisis > Remediasi > Pelajaran.
+- Pantang: jangan buka file .exe sampel, cukup baca hash + log.
+
+Minggu 8: Otomasi + Simulasi Shift SOC
+- Tugas: gabungkan siem_mini.py + soc_triage.py + threat_hunt.py jadi 1 laporan harian otomatis.
+- Jalankan: python3 ~/cyber-lab/scripts/siem_mini.py && python3 ~/cyber-lab/scripts/soc_triage.py && python3 ~/cyber-lab/scripts/threat_hunt.py > ~/cyber-lab/logs/laporan_harian.txt
+- Latihan interview: jelaskan 1 insiden 2 menit (apa terjadi, MITRE apa, aksi apa).
+- Selesai: push GitHub, tambah di CV: "Home SOC mini (Termux): SIEM + triage + hunting + DFIR timeline".
+
+Habis ini kamu setara SOC Tier-1 magang. Next: PC + TryHackMe Blue Team path + Security+.

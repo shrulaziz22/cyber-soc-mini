@@ -1,0 +1,11 @@
+title: Brute Force SSH - Lab Sendiri
+id: SOC-001
+level: critical
+detection:
+  selection:
+    Event: Failed password
+  timeframe: 5m
+  condition: count(src_ip) >= 5
+mitre: T1110
+false_positive: user lupa password 1-2x
+action: blokir di firewall sendiri + wajib MFA

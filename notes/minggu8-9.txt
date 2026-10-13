@@ -1,0 +1,16 @@
+MINGGU 8-9 SIAP KERJA
+===================
+Minggu 8: Otomasi penuh
+- Jalankan: python3 ~/cyber-lab/scripts/laporan_otomatis.py
+- Hasil: logs/LAPORAN_FINAL.md + logs/bukti.zip + hash.
+- Jadwalkan tiap pagi manual (HP tidak ada cron): jalankan 1x saat mulai belajar.
+
+Minggu 9: Launch
+- Bersihkan: hapus __pycache__, hapus IP asli jika ada, sisakan sampel.
+- GitHub: repo cyber-soc-mini, isi README (apa tool, cara jalan, contoh alert).
+- LinkedIn: tambah skill Security Monitoring, Log Analysis, MITRE ATT&CK.
+- Latihan: TryHackMe Pre-Security -> Intro to Cyber -> SOC Level 1 (di browser HP/PC).
+- Interview 2 menit: "Saya deteksi brute 6x (T1110), triage phishing skor 9, hunting jam aneh + CreateUser (T1136), bikin timeline + hash bukti."
+- Jangan: tes di luar scope bounty, buka exe sampel, klaim bisa hack.
+
+Selesai 9 minggu = 63 hari. Kamu tinggal butuh PC + sertifikat dasar untuk melamar SOC magang.

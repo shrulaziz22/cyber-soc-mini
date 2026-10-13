@@ -1,0 +1,28 @@
+# PROYEK AKHIR - HOME SOC (Minggu 4)
+Pilih: BLUE (disarankan di HP, tanpa HackTheBox berat)
+
+## Isi repo GitHub kamu nanti:
+- scripts/cek_log.py, cek_log_hari3.py, hari4_net.py, hari5_hardening.py, siem_mini.py, web_check.py, soc_triage.py
+- web-lab/app.py (server aman)
+- logs/ (HAPUS IP asli kalau ada, pakai sampel saja)
+- LAPORAN_INSIDEN.md (template di bawah)
+
+## Template LAPORAN_INSIDEN.md (isi 1 paragraf tiap bagian):
+1. Ringkasan: Pada 13 Okt 2026 SIEM mini deteksi 1 CRITICAL brute-force 6x dari 198.51.100.23 (data sampel lab).
+2. Timeline: 10:02 gagal 6x -> 09:31 SIEM alert -> 09:35 triage SOC.
+3. MITRE: T1110 Brute Force, T1566 Phishing, T1071 C2.
+4. Aksi: Blokir IP di firewall sendiri, paksa key SSH, tambah CSP, edukasi phishing.
+5. Pelajaran: Butuh update 199 paket + monitoring tiap jam.
+
+## Next cert:
+- Umum: Google Cybersecurity / Security+
+- Blue: Security Blue Team L1 + LetsDefend path SOC
+- Red etis (nanti di PC): eJPT -> OSCP
+- GRC (non-teknis): ISO 27001 Foundation
+
+## Perintah upload (di Termux):
+cd ~/cyber-lab
+git init; git add scripts web-lab notes LAPORAN_INSIDEN.md
+git commit -m "home-soc mini: siem + hardening + web defensif"
+# buat repo di github.com manual, lalu:
+# git remote add origin <url-repo-kamu>; git push -u origin main

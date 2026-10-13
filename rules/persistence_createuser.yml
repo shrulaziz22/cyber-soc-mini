@@ -1,0 +1,12 @@
+title: Persistence via CreateUser Jam Aneh - Lab Sendiri
+id: SOC-002
+level: high
+detection:
+  selection:
+    Event: CreateUser
+    Jam: 00-05
+    SrcIp_not: 203.0.113.10
+  condition: count >= 1
+mitre: T1136
+false_positive: admin lembur (cek tiket)
+action: isolasi host sendiri + hapus akun + reset + cek cron/startup
