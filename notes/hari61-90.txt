@@ -1,0 +1,5 @@
+HARI 61-90 MENUJU TIER-2 NYATA
+61-70: Kuasai Sentinel demo. Jalankan 5 KQL tiap 2 hari sampai hafal tanpa contekan. Simpan screenshot hasil.
+71-80: Kejar 1 sertifikat. Pilih Google Cybersecurity (cepat) atau SC-900 (cloud). Target lulus 1 saja.
+81-90: Cari magang/proyek nyata. Lamar 10 tempat, tulis tiap lamaran di lamaran.txt. Tambah 1 pengalaman relawan/comunitas.
+Syarat tulis Tier-2 di CV: 5 rule live + 1 laporan Inggris + 1 sertifikat + 1 pengalaman nyata. Semua legal dan jujur.
